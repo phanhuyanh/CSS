@@ -26,8 +26,8 @@
       |----------|--------|
       |```start``` | các phần từ được gói gọn lên đầu cạnh của khối container |
       |```end``` | các phần tử được gói gọi xuống cuối cạnh của khối container |
-      |```flex-start``` |  thuộc tính chỉ áp dụng cho ```flex``` layout và các phần tử được gói gọn lên đầu của khối container theo trục chéo mà container quy định(ví dụ: flex-direction: row) |
-      |```flex-end``` | thuộc tính chỉ áp dụng cho ```flex``` layout và các phần tử được gói gọn xuống cuối của khối container theo trục chéo mà container quy định(ví dụ: flex-direction: row | column) |
+      |```flex-start``` |  thuộc tính chỉ áp dụng cho ```flex``` layout và các phần tử được gói gọn lên đầu của khối container theo trục chéo mà container quy định(ví dụ: ```flex-direction: row```) |
+      |```flex-end``` | thuộc tính chỉ áp dụng cho ```flex``` layout và các phần tử được gói gọn xuống cuối của khối container theo trục chéo mà container quy định(ví dụ: ```flex-direction: row or column```) |
       |```center``` | các phần tử được gói gọn nằm chính giữa của khối container theo trục chéo |
       |```normal``` | các phần tử được đặt vị trí mặc định giống như thuộc tính ```align-content``` chưa được thiết lập |
       |```baseline``` | các phần tử được căn chỉnh có text ngang hàng nhau |
