@@ -36,3 +36,18 @@
       |```space-evenly```| các phần tử được phân bố đều trong căn chỉnh container theo trục chéo. Khoảng không gian giữa các phần tử liền kề là bằng nhau va bằng vị trí ```start``` của container đến phần tử đầu tiên và phần tử cuối cùng đến vị trí ```end``` của container |
       |```stretch``` | nếu kết hợp kích thước của các phần tử dọc theo trục chéo nhỏ hơn kích thước căn chỉnh của khối container, thì các phần tử tự động tăng kích thước như nhau, sao cho lấp đầy chính xác kích thước dọc theo trục chéo. |
    * [Explain detail](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+  
+5. **align-items**
+   * Thuộc tính CSS ```align-items``` thiết lập giá trị ```align-self``` cho tất cả các thẻ con trực tiếp thành 1 nhóm.Trong FlexBox nó điều khiển căn chỉnh các phần tử trong trục chéo.(trục chéo là trục vuông góc với trục ```flex-direction```). Trong GridLayout nó điều khiển căn chỉnh các phần tử của trục khối.
+   * Property
+     1. ```normal```: Tùy theo kiểu bố trí mà có hiệu lực khác nhau
+        * Với layout có vị trí cố định, nó sẽ cư xử các items tuyệt đối(absolute) như ```start``` và các tất cả các items cố định khác là ```stretch```
+        * Với vị trí tĩnh(static) của layout tuyệt đối(absolute), nó sẽ cư xử như ```stretch```
+        * Với Flex-items, nó sẽ cư xử như ```stretch```
+        * Với Grid items, nó có hành vi tương tự như ```stretch```, ngoại trừ các items có tỷ lệ khung nhìn hoặc có kích thước bên trong thì sẽ cư xử như ```start```
+        * Thuộc tính không ứng dụng với table cells và block-level box
+      2. ```flex-start```: các phần tử(item) sẽ được căn chỉnh lên đầu cạnh của khối container
+      3. ```flex-end```: các phần tử(item) sẽ được căn chỉnh xuống cuối cạnh của khối container
+      4. ```center```: các phần tử(item) sẽ được chỉnh ra giữa cách đề đầu cạnh và cuối cạnh của khối container
+      5. ```baseline```: dựa vào item có height lớn nhất và các item còn lại căn chỉnh sao cho thẳng hàng với nhau
+      6. ```stretch```: các phần tử sẽ được tự động tùy chỉnh ```height``` sao cho lấp đầy khoảng không gian của khối container
