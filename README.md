@@ -51,3 +51,8 @@
       4. ```center```: các phần tử(item) sẽ được chỉnh ra giữa cách đề đầu cạnh và cuối cạnh của khối container
       5. ```baseline```: dựa vào item có height lớn nhất và các item còn lại căn chỉnh sao cho thẳng hàng với nhau
       6. ```stretch```: các phần tử sẽ được tự động tùy chỉnh ```height``` sao cho lấp đầy khoảng không gian của khối container
+   
+6. **-webkit-box-reflect**
+   * Tạo một thẻ div ảo phản chiếu với thẻ đó
+   * Style: ```-webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004)```
+ 
