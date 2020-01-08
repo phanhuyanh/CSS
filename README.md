@@ -39,7 +39,7 @@
   
 5. **align-items**
    * Thuộc tính CSS ```align-items``` thiết lập giá trị ```align-self``` cho tất cả các thẻ con trực tiếp thành 1 nhóm.Trong FlexBox nó điều khiển căn chỉnh các phần tử trong trục chéo.(trục chéo là trục vuông góc với trục ```flex-direction```). Trong GridLayout nó điều khiển căn chỉnh các phần tử của trục khối.
-   * Property
+   * Value
      1. ```normal```: Tùy theo kiểu bố trí mà có hiệu lực khác nhau
         * Với layout có vị trí cố định, nó sẽ cư xử các items tuyệt đối(absolute) như ```start``` và các tất cả các items cố định khác là ```stretch```
         * Với vị trí tĩnh(static) của layout tuyệt đối(absolute), nó sẽ cư xử như ```stretch```
@@ -56,3 +56,22 @@
    * Tạo một thẻ div ảo phản chiếu với thẻ đó
    * Style: ```-webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004)```
    * [DEMO](https://jsfiddle.net/HuyAnh_123doc_IT/v3crbosg/3/)
+
+7. **align-self**
+   * Thuộc tính CSS ```align-self``` ghi đè giá trị ```align-items``` của ```grid``` or ```flex```. Trong ```grid```, nó căn chỉnh item(phần tử) trong diện tích grid(```grid area```). Trong ```Flexbox```, nó căn chỉnh item(phần tử) trong trục chéo.
+   * value
+      1. ```auto```: Tự động tính toán theo giá trị của ```align-items```
+      2. ```normal```: Tùy theo kiểu bố trí mà có hiệu lực khác nhau
+         * Trong layout vị trí cố định(absolute), nó cư xử như ```start``` với khối cố định, và như ```stretch``` với tất cả các boxes khác
+         * Vị trí tĩnh(static position) của layout absolute-position, nó cư xử như ```stretch```
+         * Đối với ```flex items```, nó cư xử như ```stretch```
+         * Đối với ```grid items```, nó cư xử như ```stretch```, ngoại trừ boxes có tỷ lệ khung hình or có kích thước nội tại thì nó cư xử như ```start```
+         * Thuộc tính không áp dụng với ```block-level```boxes, and ```table cells```
+      3. ```self-start```: Căn chỉnh items ra đầu cạnh của căn chỉnh container tương ứng với cạnh bắt đầu của trục chéo.
+      4. ```self-end```: Căn chỉnh items xuống cuối cạnh của căn chỉnh container
+      5. ```flex-start```: dùng cho ```flex``` căn chỉnh phần tử lên đầu cạnh của container
+      6. ```center```: căn lề box ra giữa trong trục chéo. Nếu trục chéo của item lớn hơn flex container , nó sẽ tràn đều cả 2 hướng.
+      7. ```baseline```: dựa vào items có height lớn nhất mà căn chỉnh sao cho thẳng hàng 
+      8. ```stretch```: Nếu kích thước item dọc theo trục chéo nhỏ hơn căn chỉnh container, item sẽ tự động tăng kích thước bằng với căn chỉnh container dọc theo trục chéo, trong khi nó vẫn tôn trọng những hạn chế áp đặt bởi ```max-height/max-width```
+         
+   
