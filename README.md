@@ -59,7 +59,7 @@
 
 7. **align-self**
    * Thuộc tính CSS ```align-self``` ghi đè giá trị ```align-items``` của ```grid``` or ```flex```. Trong ```grid```, nó căn chỉnh item(phần tử) trong diện tích grid(```grid area```). Trong ```Flexbox```, nó căn chỉnh item(phần tử) trong trục chéo.
-   * value
+   * Value
       1. ```auto```: Tự động tính toán theo giá trị của ```align-items```
       2. ```normal```: Tùy theo kiểu bố trí mà có hiệu lực khác nhau
          * Trong layout vị trí cố định(absolute), nó cư xử như ```start``` với khối cố định, và như ```stretch``` với tất cả các boxes khác
@@ -74,4 +74,4 @@
       7. ```baseline```: dựa vào items có height lớn nhất mà căn chỉnh sao cho thẳng hàng 
       8. ```stretch```: Nếu kích thước item dọc theo trục chéo nhỏ hơn căn chỉnh container, item sẽ tự động tăng kích thước bằng với căn chỉnh container dọc theo trục chéo, trong khi nó vẫn tôn trọng những hạn chế áp đặt bởi ```max-height/max-width```
          
-   
+   * [Explain detail](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
