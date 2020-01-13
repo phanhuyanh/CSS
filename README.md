@@ -75,3 +75,47 @@
       8. ```stretch```: Nếu kích thước item dọc theo trục chéo nhỏ hơn căn chỉnh container, item sẽ tự động tăng kích thước bằng với căn chỉnh container dọc theo trục chéo, trong khi nó vẫn tôn trọng những hạn chế áp đặt bởi ```max-height/max-width```
          
    * [Explain detail](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
+ 
+ 8. **animation-fill-mode**
+    * Syntax: ```animation-fill-mode: value```
+    * Value:
+    
+      |Value|Explain|
+      |-----|-------|
+      |none|Animation sẽ không áp dụng bất kỳ style nào lên đối tượng không thực hiện.Phần tử sẽ thay thế hiển thị sử dụng bất kỳ quy tắ CSS áp dụng lên nó. Đây là giá trị mặc định|
+      |forwards| Đối tượng sẽ được giữ lại vị trí cuối cùng của ```animation```|
+      |backwards| Đối tượng sẽ được quay lại vị trí ban đầu sau khi hết ```animation```|
+      |both| Nó sẽ theo quy tắc của ```forwards``` và ```backwards```|
+      
+9. **animation-iteration-count**
+   * Syntax: ```animation-iteration-count: <number> | infinite```
+   * Định nghĩa số lần ```animation``` được thực hiện. Nếu giá trị là ```infinite``` thì ```animation``` sẽ thực hiện mãi mãi.
+   
+10. **animation-name**
+    * Thuộc tính thiết lập một hoặc nhiều ```animation``` cung cấp cho ```element```.Mỗi tên là quy tắc ```@keyframes``` thiết lập giá trị thuộc tính cho một chuỗi animation
+    * Syntax: ```animation-name: slide``` và ```@keyframes slide {}```
+    
+11. **animation-play-state**
+     * Thuộc tính thiết lập liệu ```animation``` đang chạy hoặc dừng lại
+     * Syntax: ```animation-play-state: running | paused```
+     
+     |Value|Explain|
+     |-----|-------|
+     |running| ```animation``` đang ở trạng thái ```running```
+     |paused| ```animation``` đăng ở trạng thái ```paused```|
+    
+12. **animation-timing-function**
+     * Thuộc tính thiết lập làm thế nào ```animation``` chuyển động trong suốt thời gian của 1 chu kỳ
+     * Value
+     
+     |Value|Explain|
+     |-----|-------|
+     |ease|Đây là giá trị mặc định. Vận tốc tăng dần đến giữa ```animation``` và giảm dần về cuối|
+     |linear| Tại mọi thời điểm của animation đề có vận tốc đều nhau|
+     |ease-in|Ban đầu chậm, tăng dần tốc độ cho tới khi kết thúc ```animation```|
+     |ease-out| Ban đầu nhanh, giảm dần tốc độ cho tới khi kết thúc ```animation```|
+     |ease-in-out| Ban đầu chậm , xong rồi nhanh rồi lại chậm|
+     
+13. **animation**
+    * Syntax: ```animation: animation-name | animation-duration | animation-timming-function | animation-delay | animation-iteration-count | animation-direction | animation-fill-mode | animation-play-state```
+    
