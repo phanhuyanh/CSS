@@ -119,3 +119,13 @@
 13. **animation**
     * Syntax: ```animation: animation-name | animation-duration | animation-timming-function | animation-delay | animation-iteration-count | animation-direction | animation-fill-mode | animation-play-state```
     
+14. **attr()**
+    * function CSS ```attr``` sử dụng để lấy lại giá trị của thuộc tính(attribute) của phần tử được chọn, và sử dụng nó trong stylesheet.Nó cũng có thế sử vói phần tử giả(pseudo-element: after và before), giá trị của thuộc tính trong phần tử giả chính là giá trị của phần tử nguyên gốc.
+    * Syntax: ```property: attr(attribute-name)```
+    * Example:
+      1. HTML: ```<p data-foo="hello">world</p>```
+      2. CSS: ```[data-foo]::before {
+              content: attr(data-foo) " ";
+              }
+              ```
+         
