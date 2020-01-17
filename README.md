@@ -128,4 +128,16 @@
               content: attr(data-foo) " ";
               }
               ```
+15. **background-attachment**
+    * Là thuộc tính thiết lập liệu vị trí ảnh nền sẽ ```fixed``` với màn hình ```viewport``` hoặc ```scrolls``` với khối chứa nó.
+    * Value
+    
+    |Value|Explain|
+    |-----|-------|
+    |fixed|Ảnh nền sẽ được fixed với ```viewport```. Thậm chí nếu phần tử có cơ chế ```scroll```, thì ảnh nền không di chuyển cùng với phần tử. Nó không tương thích với ```background-clip: text```|
+    |scroll|Ảnh nền sẽ ```fixed``` với phần tử chính nó và không cuộn với nội dung của nó. Nó chỉ có hiệu lực trói buộc với border element(nghĩa là nếu border của phần tử đó di chuyển thì ảnh nền cũng di chuyển theo).|
+    |local|Ảnh nền sẽ ```fixed``` với nội dung của nó(element's contents).Nếu phần tử có cơ chế cuộn(```scroll```) thì ảnh nền sẽ cuộn theo nội dung của phần tử và diện tích ảnh nền và vị trí ảnh nền liên quan với diện tích ```scroll``` thay vì đóng khung chúng|
+    
+    * [DEMO](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html)
+    * [Explain detail](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
          
