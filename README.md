@@ -141,3 +141,35 @@
     * [DEMO](https://mdn.github.io/learning-area/css/styling-boxes/backgrounds/background-attachment.html)
     * [Explain detail](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
          
+16. **background-blend-mode**
+    * Thuộc tính định nghĩa làm thế nào ```background-image``` nên trộn với ```background-color``` của nó.
+    * Values
+    
+    |Value|Explain|
+    |-----|-------|
+    |initial|Giá trị mặc định không trộn với ```background-color``` mà chồng chéo lên|
+    |inherit|Kế thừa kiểu trộn ```blend-mode``` của phần tử cha|
+    |normal|```background-color``` sẽ không chảy qua ```background-image```.Hay mặc định ```background-image``` chồng chéo lên|
+    |multiply|```background-color``` và ```background-image``` sẽ được nhân lên và dẫn đến ảnh ```image``` sẽ tối hơn trước|
+    |screen|Cả ```image``` và ```color``` bị đảo ngược, nhân lên và sau đó đảo ngược lại lần nữa|
+    |overlay|```background-color``` sẽ trộn với ```background-image``` để phản chiếu độ sáng hoặc tối của phông nền|
+    |lighten|Nếu ```background-image``` sáng hơn ```background-color``` thì image sẽ thay thế, ngược lại nó vẫn như cũ|
+    |color-dodge|```background-color``` sẽ chia cho đảo ngược của ```background-image```|
+    |color-burn|```background-color``` sẽ được đảo ngược, chia cho ```background-image``` và đảo ngược lại lần nữa|
+    |hard-light|Nếu ```background-image``` sáng hơn ```background-color``` thì kết quả là ```mulipy``` hoặc nếu sáng hơn thì kết quả là ```screen```|
+    |soft-light|kết quả cuối cùng tương tự như ```hard-light``` nhưng mềm hơn ở chỗ ánh sáng khuếch tán đặt trong image|
+    |difference|Kết quả trừ đi màu tối của ```background-image``` và ```background-color```.Thường image sẽ có độ tương phản cao|
+    |exclusion| Kết quả tương tự như ```difference``` với độ tương phản thấp|
+    |hue|Kết quả màu sắc của ```background-image``` kết hợp với độ sáng và độ bão hòa của ```background-color```|
+    |saturation|Giữ độ bão hòa của ```background-image``` trong khi trộn màu sắc và độ sáng của ```background-color```|
+    |color|Giữ màu sắc và bão hòa của ```background-image``` và độ sáng của ```background-color```|
+    |luminosity| Độ sáng của màu sắc trên cùng được giữ trong khi sử dụng bão hòa và màu sắc của ```background-color```|
+    
+    * [Explain Detail](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
+    
+    
+    
+    
+    
+    
+    
