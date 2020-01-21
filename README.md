@@ -177,6 +177,18 @@
          2. 11111111111111111111111111111010 (~5 = -6)
     * Dấu của số đó chính là dấu bit ngoài cùng. 1 là âm và 0 là dương
     * Trick: đơn giản ta chỉ cần hiểu khi sử dụng toán tử (~) là : ```~a = -(a + 1)```
+   
+18. **Bitwise Right shift(>>)**
+    * Syntax: n >> a
+    * Dịch a bit sang bên phải và giữ nguyên dấu của n
+    
+19. **Bitwise Left shift(<<)**
+    * Syntax: n << a
+    * Dịch a bit sang bên trái và thêm vào bên phải các bit 0
+
+29. **Bitwise (Zero Fill) Right shift(>>>)**
+    * Syntax: n >>> a
+    * Dịch a bit sang bên phải và thêm sau bên tr
     
     
     
