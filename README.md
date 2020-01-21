@@ -167,28 +167,23 @@
     
     * [Explain Detail](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
     
+17. **background-clip**
+    * Thuộc tính CSS thiết lập liệu element's background mở rộng dưới ```border-box```, ```padding-box```, hoặc ```content-box```
+    * Values
     
-    
-17. **Bitwise Not (~) in JS**
-    * Đảo ngược tất cả các bit của number. Vd: 1010 --> 0101
-    * Trong JS, số lưu trữ dạng dấu phẩy động 64bit(float 64bit), nhưng tất cả các thao tác toán tử bit đều thực hiện trên số nghị phân 32bit. Trước khi thực hiện bit , JS sẽ convert sang số nguyên có dấu 32 bit. Sau khi thực hiện xong, JS lại convert lại về số 64 bit
-    * VD: 
-         1. 00000000000000000000000000000101 (5)
-         2. 11111111111111111111111111111010 (~5 = -6)
-    * Dấu của số đó chính là dấu bit ngoài cùng. 1 là âm và 0 là dương
-    * Trick: đơn giản ta chỉ cần hiểu khi sử dụng toán tử (~) là : ```~a = -(a + 1)```
+    |Value|Explain|
+    |-----|-------|
+    |border-box|```background``` mở rộng ra rìa ngoài của border, nhưng nằm bên dưới border. Hay có ```z-index``` nhỏ hơn|
+    |border-box|```background``` mở rộng ra rìa ngoài của padding.Không có ```background``` được vẽ bên dưới ```border```|
+    |content-box|```background``` được vẽ trong khối nội dung(content box)|
    
-18. **Bitwise Right shift(>>)**
-    * Syntax: n >> a
-    * Dịch a bit sang bên phải và giữ nguyên dấu của n
+18. **background-color**
+    * Thuộc tính CSS thiết lập background-color của phần tử
+    * Syntax
     
-19. **Bitwise Left shift(<<)**
-    * Syntax: n << a
-    * Dịch a bit sang bên trái và thêm vào bên phải các bit 0
-
-29. **Bitwise (Zero Fill) Right shift(>>>)**
-    * Syntax: n >>> a
-    * Dịch a bit sang bên phải và thêm sau bên tr
-    
-    
-    
+    |Syntax|Description|
+    |------|-----------|
+    |Keyword values| ```background-color: red```|
+    |hex value| ```background-color: #bbff00```|
+    |RGB value| ```background-color: rgb(1,1,1)```|
+    |HSL value| ```background-color: hsl(50, 33%, 25%)```|
