@@ -187,3 +187,23 @@
     |hex value| ```background-color: #bbff00```|
     |RGB value| ```background-color: rgb(1,1,1)```|
     |HSL value| ```background-color: hsl(50, 33%, 25%)```|
+
+19. **background-position**
+    * Thuộc tính CSS thiết lập vị trí ban đầu cho từng ```background-image```.Vị trí có liên quan đến vị trí layer được thiết lập bởi ```background-origin```
+    * Position: Được định nghĩa tạo độ X/Y. X đại diện cho vị trí liên quan theo chiều ngang và Y đại diện cho vị trí liên quan theo chiều dọc. Giá trị đầu khai bao X và giá trị sau khai báo Y
+    * Values
+        1. 1-value syntax(cú pháp một giá trị):
+           * Giá trị là ```center``` , thì image nằm ở chính giữa
+           * Một trong giá trị từ khóa là ```top```,```left```,```bottom```,```right```.Thì được hiểu là 0% và trục còn lại mặc đinh là 50%.VD: ```top``` thì image nằm ở vị trí top 0% và trục X là 50%
+           * Nếu khai báo 1 giá trị là phần trăm thì có nghĩa là X% và mặc định Y là 50%
+        2. 2-value syntax(cú pháp hai giá trị):
+           * Một trong giá trị từ khóa ```top```,```left```,```bottom```,```right```.Nếu có ```left``` hoặc ```right``` thì nó định nghĩa giá trị theo trục X là 0%. Nếu ```top``` hoặc ```bottom``` nó định nghĩa theo trục Y là 0%
+           * Không thể khai báo 2 giá trị cùng một trục được. VD: ```background-position: top bottom```
+        3. 3-value syntax(cú pháp ba giá trị)
+           * Giá trị đầu tiên là một giá trị từ khóa ```top```,```left```,```bottom```,```right``` hoặc ```center```.
+           * Có 2 trường hợp với kiểu khai báo này
+               * ```background-position: Keyword-Value1 p% Keyword-Value2```: nghĩa là vị trí Keyword-Value1 p% và Keyword-value2 0%
+               * ```background-position: Keyword-Value1 Keyword-Value2 p%```: nghĩa là vị trí Keyword-Value1 0% và Keyword-value2 mặc định p%
+               
+         4. 4-value syntax(cú pháp bốn giá trị):
+            * ```background-position: keyword-value1 a% keyword-value2 b%```: nghĩa là vị trí Keyword-Value1 a% và Keyword-value2 b%
