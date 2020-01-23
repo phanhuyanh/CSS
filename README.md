@@ -207,3 +207,14 @@
                
          4. 4-value syntax(cú pháp bốn giá trị):
             * ```background-position: keyword-value1 a% keyword-value2 b%```: nghĩa là vị trí Keyword-Value1 a% và Keyword-value2 b%
+            
+20. **background-repeat**
+    * Thuộc tính thiết lập làm thế nào ```background-image``` được lặp lại.```Background-image``` có thể lặp lại theo trục ngang và trục dọc, hoặc không lặp cả hai hướng.
+    * Syntax: ```background-repeat: value1 value2```. Value1 đại diện cho trục ngang và value2 đại diện cho trục dọc
+    * Values
+    
+    |Value|Explain|
+    |-----|-------|
+    |repeat|```image``` sẽ được lặp nhiều nhất có thể để bao phủ diện tích của phần tử.```image``` cuối cùng sẽ bị cắt nếu nó không phù hợp|
+    |space|```image``` sẽ được lặp nhiều nhất có thể mà không bị cắt xén.Ảnh đầu và cuối được ghim ở 2 bên của phần tử, và khoảng không gian được phân phối đều giữa các ảnh.Thuộc tính ```background-position``` được bỏ qua trừ khi chỉ có duy nhất một ảnh được hiển thị mà không bị cắt xén.Trường hợp duy nhất xảy ra cắt xén là không đủ diện tích để hiển thị một ảnh|
+    |round|Các ```image``` sẽ lặp lại nhiều nhất có thể. Nếu không gian còn thừa lại lớn hơn hoặc bằng 1/2 của ```width origin image``` thì sẽ tự động add thêm một ```image``` và các ```image``` sẽ được co giãn lại ```width``` sao cho phù hợp với ```width element```|
