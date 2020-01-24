@@ -218,3 +218,20 @@
     |repeat|```image``` sẽ được lặp nhiều nhất có thể để bao phủ diện tích của phần tử.```image``` cuối cùng sẽ bị cắt nếu nó không phù hợp|
     |space|```image``` sẽ được lặp nhiều nhất có thể mà không bị cắt xén.Ảnh đầu và cuối được ghim ở 2 bên của phần tử, và khoảng không gian được phân phối đều giữa các ảnh.Thuộc tính ```background-position``` được bỏ qua trừ khi chỉ có duy nhất một ảnh được hiển thị mà không bị cắt xén.Trường hợp duy nhất xảy ra cắt xén là không đủ diện tích để hiển thị một ảnh|
     |round|Các ```image``` sẽ lặp lại nhiều nhất có thể. Nếu không gian còn thừa lại lớn hơn hoặc bằng 1/2 của ```width origin image``` thì sẽ tự động add thêm một ```image``` và các ```image``` sẽ được co giãn lại ```width``` sao cho phù hợp với ```width element```|
+    
+    
+21. **background-size**
+    * Thuộc tính CSS thiết lập kích thước ```background-image``` của phần tử.Image có thế là kích thước tự nhiên, co giãn, hoặc hạn chế để phù hợp với không gian có sẵn.
+    * Values:
+         1. contain
+             * Mở rộng image lớn nhất có thể mà không cắt hoặc co giãn image
+             * Nó phụ thuộc vào ```min = Math.min(width, height)``` của phần tử để có thể lặp lại image
+             * Nếu ```width``` hoặc ```height``` của phân tử lớn hơn ```min``` thì sẽ tự động lặp thêm image theo chiều đó.
+             * Có thể sử dụng thuộc tính ```background-repeat``` nếu không muốn lặp thêm image
+         2. cover
+             * Mở rộng image lớn nhất có thể mà không co giãn image.
+             * Nó phụ thuộc vào ```max = Math.min(width, height)```. Điểm khác biệt của thuộc tính ```cover``` so với ```contain``` là nó sẽ không bao giờ lặp lại image, thay vào đó nó thể dịch chuyển vị trí ```background-position: center``` tương đương với thẻ có kích thước ```max x max```
+             * Ví dụ: nếu có 1 div có các giá trị là ```width = 200px``` và ```height = 300px```.Nó sẽ dịch chuyển image với vị trí ```background-position: center``` tương đương như thẻ có kích thước ```300x300```
+         3. Percentage
+             * Syntax: ```background-size: a%```
+             * Định nghĩa image có kích thước là ```width * a%``` và ```height * a%``` trong đó ```width``` và ```height``` là kích thước của phần tử.
