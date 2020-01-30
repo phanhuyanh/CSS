@@ -235,3 +235,12 @@
          3. Percentage
              * Syntax: ```background-size: a%```
              * Định nghĩa image có kích thước là ```width * a%``` và ```height * a%``` trong đó ```width``` và ```height``` là kích thước của phần tử.
+             
+22. **blur()**
+    * Hàm CSS ```blur()``` áp dụng ```Gaussian blur``` cho image. Nó sẽ làm nhòe image
+    * Syntax: ```filter: blur(Xpx)```
+    
+23. **border**
+    * Thuộc tính CSS ```border``` thiết lập đường viền của phần tử.Nó thiết lập giá trị của ```border-width```,```border-style``` và ```border-color```
+    * Syntax: ```border: width | style | color|```
+    * Example: ```border: 1px solid #ccc```
