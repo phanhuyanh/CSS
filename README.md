@@ -244,3 +244,15 @@
     * Thuộc tính CSS ```border``` thiết lập đường viền của phần tử.Nó thiết lập giá trị của ```border-width```,```border-style``` và ```border-color```
     * Syntax: ```border: width | style | color|```
     * Example: ```border: 1px solid #ccc```
+    
+24. **border-style**
+    * Thuộc tính thiết lập kiểu đường cho bốn bên của border element.
+    * Syntax: ```border-style``` là thuộc tính có thể chỉ định một, hai, ba, hoặc bốn giá trị
+    
+      |Syntax|Explain|
+      |------|-------|
+      |Một giá trị| Nó sẽ áp dụng cho tất cả bốn cạnh của border|
+      |Hai giá trị| Giá trị đầu tiên sẽ áp dụng cho ```top and bottom```, giá trị thứ hai cho ```left and right```|
+      |Ba giá trị| Giá trị đầu tiên áp dụng cho ```top```, giá trị thứ hai cho ```left and right```, giá trị thứ ba cho ```bottom```|
+      |Bốn giá trị| Áp dụng cho ```top, right, bottom, left``` theo đúng thứ tự kim đồng hồ|
+      
