@@ -256,3 +256,11 @@
       |Ba giá trị| Giá trị đầu tiên áp dụng cho ```top```, giá trị thứ hai cho ```left and right```, giá trị thứ ba cho ```bottom```|
       |Bốn giá trị| Áp dụng cho ```top, right, bottom, left``` theo đúng thứ tự kim đồng hồ|
       
+25. **caret-color**
+    * Thuộc tính thiết lập màu của ```caret```. Thường xuất hiện ở thẻ ```input```
+    * Syntax: ```caret-color: <color> value```
+    * [Explain Detail](https://developer.mozilla.org/en-US/docs/Web/CSS/caret-color)
+    
+26. **column-count**
+    * Thuộc tính phá vỡ nội dung phần tử thành số cột được chỉ định
+    * Syntax: ```column-count: 2```
